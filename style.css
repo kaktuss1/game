@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    max-width: 2000px;
+    width: 100%;
+    max-height: 2000px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#startButton{
+    padding: 30px;
+    border: none;
+    background-color: #7dffbe;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+#startButton:hover {
+    cursor: pointer;
+    background-color: #5bffad;
+}
+.container{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.noDisplay{
+    display: none;
+}
+.display {
+    display: block;
+}
+.findBtn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(215, 172, 255);
+}
+.wrongBtn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    animation: colorChange 0.7s normal;
+    background-color: rgb(255, 81, 81);
+    
+}
+@keyframes colorChange {
+    0% { background-color: rgb(215, 172, 255); }
+    50% { background-color: rgb(255, 81, 81) }
+  }
+.findBtn:hover {
+    background-color: rgb(202, 146, 255);
+    cursor: pointer;
+}
+.guessInp {
+    height: 50px;
+    border: none;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
+}
+#guessBtn {
+    background: #c1ffab;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+#guessBtn:hover {
+    cursor: pointer;
+    background: #b6ff9c;
+}
+.carContainer {
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.road {
+    height: 50px;
+    width: 1500px;
+    background: #717171;
+}
+.carText {
+    justify-self: center;
+}
+#math {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+#mathInp {
+    height: 45px;
+    border: none;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
+}
+#mathBtn {
+    height: 50px;
+    background: #c1ffab;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#guessImage {
+    height: 200px;
+    width: 300px;
+}
+#imageInp {  
+    height: 45px;
+    border: none;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
+}
+#imageBtn {
+    height: 50px;
+    background: #c1ffab;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.cats {
+    width: 400px;
+    font-size: 19px;
+}
+#catBtn {
+    border: none;
+    padding: 0;
+    background: white;
+    font-size: 19px;
+}
+.correct {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+#block {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #e6e6e6;
+    color: #c3c2c2;
+    position: relative;
+    bottom: -30px;
+}
+#block:hover {
+    cursor: pointer;
+}
+#check {
+    height: 50px;
+    background: #c1ffab;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}

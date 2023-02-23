@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="startButton">Начать играть</button>
+  <div class="container" id="container">
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn" id="trueBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+    <button class="findBtn"></button>
+  </div>
+
+  <div class="container" id="guessNumber">
+    <label>Угадайте число от 0 до 3</label>
+    <input type="text" class="guessInp">
+    <button id="guessBtn">Enter</button>
+  </div>
+
+  <div class="noDisplay" id="carContainer">
+    <h1>Кликните по машинке и нажмите -></h1>
+    <div class="road">
+      <p id="car">🚗</p>
+    </div>
+  </div>
+  <div class="math">
+    <h1>Сколько будет 2 * 2 (3 + 1)?</h1>
+    <div>
+      <input type="text" placeholder="Введите ответ" id="mathInp">
+      <button id="mathBtn">Проверить</button>
+    </div>
+  </div>
+  <div class="image">
+    <h1>Сколько на рисунке прямоугольников?</h1>
+    <img src="./public/Снимок.PNG" alt="" id="guessImage">
+    <div>
+      <input type="text" placeholder="Введите ответ" id="imageInp">
+      <button id="imageBtn">Проверить</button>
+    </div>
+  </div>
+  <div class="findCat">
+    <h1>Найдите отличающийся смайлик</h1>
+    <p class="cats">😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾<button id="catBtn">😼</button>😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾😾</p>
+  </div>
+  <div class="test">
+    <h1>Какой сейчас год?</h1>
+    <ul>
+      <li><label for="one">2012</label><input type="radio" id="one" class="inp" name="radio"></li>
+      <li><label for="two">2017</label><input type="radio" id="two" class="inp" name="radio"></li>
+      <li><label for="three">1980</label><input type="radio" id="three" class="inp" name="radio"></li>
+    </ul>
+    <button id="check">проверить</button>
+    <div class="correct">
+      <div id="block"><p>нажми</p></div>
+      <label for="four" class="four">2023</label>
+      <input type="radio" id="four" class="four inp" name="radio">
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
